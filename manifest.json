@@ -1,0 +1,25 @@
+{
+  "name": "にっけいくん",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "日経平均をカジュアルに取ってきます",
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "permissions": [
+    "alarms",
+    "tabs",
+    "http://stocks.finance.yahoo.co.jp/stocks/detail/*"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "にっけいくん",
+    "default_icon": "19.png",
+    "default_popup": "popup.html"
+  }
+}
