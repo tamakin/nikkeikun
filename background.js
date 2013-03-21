@@ -32,6 +32,7 @@ function getNikkei() {
       var per = parseFloat(change.match(/(.*)（(.*)%）/)[2]);
       chrome.browserAction.setBadgeText({text : per.toString()});
       chrome.browserAction.setBadgeBackgroundColor({color : per >= 0 ? colors[0] : colors[1]})
+      chrome.browserAction.setTitle({title : $price.innerHTML});
     },
     function(res){
       chrome.browserAction.setBadgeText({text : "NG"});
