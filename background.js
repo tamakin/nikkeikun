@@ -9,7 +9,7 @@ chrome.alarms.onAlarm.addListener(function(alarm) {
   if (alarm) {
     if (alarm.name == 'getNikkei') {
       console.log("alerm in")
-      getNikkei();
+      chrome.runtime.getBackgroundPage(getNikkei);
     }
   }
 });
